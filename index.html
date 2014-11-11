@@ -8,15 +8,22 @@
         padding: 0px;
         margin: 0px;
       }
+      .scores {
+        position: relative;
+        bottom: 500px;
+      }
     </style>
   </head>
 
   <body>
+
     <canvas width="500" height="500" id="canvas"></canvas>
     <script>
       var canvas = document.getElementById('canvas');
       var c = canvas.getContext('2d');
     </script>
+    <script src="jquery-1.11.1.min.js"></script>
+    <script src="keymaster.js"></script>
     <script src="lib/util.js"></script>
     <script src="lib/moving_object.js"></script>
     <script src="lib/asteroid.js"></script>
@@ -24,6 +31,9 @@
     <script src="lib/ship.js"></script>
 
     <script src="lib/gameview.js"></script>
+    <div id="points">Points</div>
+    <div id="scores" class="scores">Scores: </div>
+
 
 
 
